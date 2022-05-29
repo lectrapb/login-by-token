@@ -1,0 +1,28 @@
+.base-login{
+    background-color: orange;
+    color: black;
+}
+
+.element-100{
+    height: 100vh;
+    width:  100vw;
+    overflow: auto;
+}
+
+.round-right-side{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px; 
+}
+
+.bgImage{
+
+    background-image: url(../../../assets/door.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    width: auto;
+    height: auto;
+    background-color: #ffffff;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}

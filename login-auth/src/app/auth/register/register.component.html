@@ -1,0 +1,68 @@
+<div class="base-login element-100">
+    
+    <div class="container pt-5">
+
+          <div class="row">
+              <div class="col bgImage">
+              
+              </div>
+              <div class="col bg-white text-secondary round-right-side">
+                 <div class="text-end">
+                      <a routerLink="/login">
+                          <img src="assets/door.png" width="45" alt="logo">
+                      </a>
+                 </div>
+                 <h2 class="fw-bold text-center pt-5 mb-5">Register</h2>
+                 <form autocomplete="off" 
+                       (ngSubmit)="registerUser()"
+                       [formGroup]="registerForm">
+                     <div class="mb-4">
+                         <label for="name" class="form-label">Name</label>
+                         <input type="text" 
+                                name="name" 
+                                class="form-control" 
+                                placeholder="name"
+                                formControlName="name">
+                    </div>
+                     <div class="mb-4">
+                         <label for="email" class="form-label">Email</label>
+                         <input type="email" 
+                                name="email" 
+                                class="form-control" 
+                                placeholder="email"
+                                formControlName="email">
+                    </div>
+                    <div class="mb-4">
+                         <label for="password" class="form-label">Password</label>
+                         <input type="password" 
+                                name="password" 
+                                class="form-control" 
+                                placeholder="password"
+                                formControlName="password">
+                    </div>
+                    <div class="mb-4 form-check">
+                        <input type="checkbox" 
+                               name="remember" 
+                               class="form-check-input"
+                               formControlName="terms">
+                        <label for="remember" class="form-check-label">Terms and conditions</label>
+                    </div>
+                    <div class="row">
+                        <div class="col text-danger">
+                            <p *ngIf="name?.invalid && (name?.dirty || name?.touched)">The name is required</p>
+                            <p *ngIf="email?.invalid && (email?.dirty || email?.touched)">The email is required</p>
+                            <p *ngIf="password?.invalid && (password?.dirty || password?.touched)">The password is required</p>
+                        </div>
+                    </div>
+                    <div class="d-grid">
+                        <button class="btn btn-secondary" 
+                               
+                                [disabled]="!registerForm.valid">Register</button>
+                    </div><br>
+                     
+                  
+                 </form>
+              </div>
+          </div>
+    </div>
+</div>
