@@ -30,15 +30,21 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
 
-      this.remember = this.statusRememberme();  
-      if(this.remember){
-         const auto_login = this.userService.validateToken();
-         if(auto_login){
-           this.router.navigateByUrl('/dashboard/home');
-           Swal.fire('Successful', 'Get into Login app!', 'success');
-         }else{
-           Swal.fire('Error', 'Error validacion please login again', 'error');  
-         } 
+      this.remember = this.statusRememberme();
+       
+      if(this.remember){         
+         this.userService.validateToken()
+            .subscribe(isValid =>{
+              
+                if(isValid){
+                  this.router.navigateByUrl('/dashboard/home');
+                  Swal.fire('Successful', 'Get into Login app!', 'success');
+                }else{
+                  Swal.fire('Error', 'Error validacion please login again', 'error');
+                  localStorage.removeItem(Constant.REMEMBER_USER);
+                  this.remember = false;  
+                } 
+            });        
       }
       
   }

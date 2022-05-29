@@ -32,7 +32,7 @@ public class TokenServiceImpl implements TokenService {
          claims.setExpirationTimeMinutesInTheFuture(1); // time when the token will expire (1 minutes from now)
          claims.setGeneratedJwtId(); // a unique identifier for the token
          claims.setIssuedAtToNow();  // when the token was issued/created (now)
-         claims.setNotBeforeMinutesInThePast(2); // time before which the token is not yet valid (2 minutes ago)
+         claims.setNotBeforeMinutesInThePast(1); // time before which the token is not yet valid (2 minutes ago)
          claims.setSubject("subject"); // the subject/principal is whom the token is about
          claims.setClaim("uid", uid); // additional claims/attributes about the subject can be added
 
