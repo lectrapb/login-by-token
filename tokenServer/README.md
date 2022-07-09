@@ -11,5 +11,5 @@ collection attached in the project.
 
 ## Documentation
 Please check this post:
-<a href="https://thinksprograms.blogspot.com/" target="_blank">Token server</a>
+<a href="https://thinksprograms.blogspot.com/2022/05/token-server.html" target="_blank">Token server</a>
 
