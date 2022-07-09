@@ -31,7 +31,7 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
 
       this.remember = this.statusRememberme();
-       
+
       if(this.remember){         
          this.userService.validateToken()
             .subscribe(isValid =>{
