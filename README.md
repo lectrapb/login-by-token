@@ -28,5 +28,9 @@ collection attached in the project.
 4. Open again the web browser, and you will be gone to the same URL you will be logged in without any password!. After 2 minutes http://localhost:4200, the Token will expire, and if you want to try to reaccess it, you will have to put in your credentials again.
 
 ## Documentation
-Please check this post:
-<a href="https://thinksprograms.blogspot.com/" target="_blank">Token server</a>
+Please check this post about backend app:
+<a href="https://thinksprograms.blogspot.com/2022/05/token-server.html" target="_blank">Token server</a>
+
+Please check this post about frontend app:
+<a href="https://thinksprograms.blogspot.com/2022/07/login-by-token.html" target="_blank">Login app</a>
+

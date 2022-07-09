@@ -1,27 +1,21 @@
-# LoginAuth
+# LOGIN AUTH
+
+Login application is a typical operation on any web; this project uses the standard JWT to authenticate users in two ways; the first is an everyday use case with user email and password; the second method uses a Token Jwt to avoid the user’s email and user’s password in authentication process; this project was developed in Angular 12; the backend was developed in Java with the Spring Boot framework <a href="https://github.com/lectrapb/login-by-token/tree/main/tokenServer" target="_blank">Token Server</a>. 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.16.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run <span style="color: orange"> ng serve </span>  for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run <span style="color: orange"> `ng build` </span> to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Deploy
+Use the command <span style="color: orange"> docker-compose up </span>.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Documentation
+Please check this post about frontend app:
+<a href="https://thinksprograms.blogspot.com/2022/07/login-by-token.html" target="_blank">Login app</a>
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
