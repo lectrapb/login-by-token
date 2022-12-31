@@ -118,7 +118,7 @@ public class TokenServiceImpl implements TokenService {
             System.out.println("Error "+e.getMessage());
         }
 
-        tokenData.setValid(false );
+        tokenData.setValid(false);
         return tokenData;
     }
 }

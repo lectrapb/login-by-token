@@ -7,7 +7,6 @@ import com.auth.authserver.domain.model.login.Login;
 import com.auth.authserver.domain.model.login.LoginRequestDTO;
 import com.auth.authserver.domain.model.token.Token;
 import com.auth.authserver.domain.model.user.User;
-import com.auth.authserver.domain.model.user.UserRequestDTO;
 import com.auth.authserver.domain.model.user.UserResponseDTO;
 import com.auth.authserver.domain.usecases.registeruser.MapperUserRequest;
 
